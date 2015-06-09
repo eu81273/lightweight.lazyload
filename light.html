@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <title>Lazy Loading 테스트</title>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" type="text/css">
+        <style>
+            img {
+                margin: -3px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <header>
+    <body>
+        <p>
+            <img data-src="/image/13163198-0.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-1.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-2.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-3.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-4.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-5.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-6.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-7.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-8.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-9.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-10.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-10.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-11.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-12.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-13.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-14.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-15.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-16.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-17.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-18.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-19.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-20.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-21.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-22.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-23.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-24.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-25.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-26.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-27.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-28.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-29.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-30.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-31.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-32.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-33.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-34.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-35.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-36.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-37.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-38.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-39.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-40.jpg" src="/image/dummy.jpg" /><br />
+            <img data-src="/image/13163198-41.jpg" src="/image/dummy.jpg" /><br />
+        </p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="/javascript/lightweight.lazyload.js"></script>
+        <script>
+            $(function() {
+                $("img").lightweightLazyload(300);
+            });
+        </script>
+    </body>
+</html>
