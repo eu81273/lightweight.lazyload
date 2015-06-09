@@ -68,7 +68,11 @@
         <script src="./javascript/jquery.unveil.js"></script>
         <script>
             $(function() {
-                $("img").unveil(300);
+                $("img").unveil(300, function () {
+                    $(this).fadeTo(0, 0).load(function () {
+                        $(this).fadeTo(1000, 1);
+                    });
+                });
             });
         </script>
     </body>
