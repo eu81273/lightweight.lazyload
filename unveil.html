@@ -7,8 +7,13 @@
         <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" type="text/css">
 
         <style>
+
+            /* 기술서 이미지들을 감싸고 있는 요소의 줄간격은 최소로 */
+            p {
+                line-height: 0;
+            }
+
             img {
-                margin: -3px;
                 width: 100%;
             }
 
@@ -16,11 +21,11 @@
                 opacity: 0;
             }
             .lazy-hidden.lazy-loaded {
-                -webkit-transition: opacity 2s;
-                -moz-transition: opacity 2s;
-                -ms-transition: opacity 2s;
-                -o-transition: opacity 2s;
-                transition: opacity 2s;
+                -webkit-transition: opacity 1s ease .5s;
+                -moz-transition: opacity 1s ease .5s;
+                -ms-transition: opacity 1s ease .5s;
+                -o-transition: opacity 1s ease .5s;
+                transition: opacity 1s ease .5s;
                 opacity: 1;
             }
 
