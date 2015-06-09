@@ -21,11 +21,11 @@
                 opacity: 0;
             }
             .lazy-hidden.lazy-loaded {
-                -webkit-transition: opacity 1s ease .5s;
-                -moz-transition: opacity 1s ease .5s;
-                -ms-transition: opacity 1s ease .5s;
-                -o-transition: opacity 1s ease .5s;
-                transition: opacity 1s ease .5s;
+                -webkit-transition: opacity 1s ease 0s;
+                -moz-transition: opacity 1s ease 0s;
+                -ms-transition: opacity 1s ease 0s;
+                -o-transition: opacity 1s ease 0s;
+                transition: opacity 1s ease 0s;
                 opacity: 1;
             }
 
@@ -87,7 +87,9 @@
         <script>
             $(function() {
                 $("img").unveil(500, function () {
-                    $(this).addClass("lazy-loaded");
+                    $(this).load(function () {
+                        $(this).addClass("lazy-loaded");
+                    });
                 });
             });
         </script>
