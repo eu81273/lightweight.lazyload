@@ -69,7 +69,7 @@
         <script>
             $(function() {
                 $("img").unveil(500, function () {
-                    $(this).hide().fadeIn(1000);
+                    $(this).fadeTo(0, .1).fadeTo(1000, 1);
                 });
             });
         </script>
