@@ -9,6 +9,7 @@
         <style>
             img {
                 margin: -3px;
+                width: 100%;
             }
         </style>
     </head>
@@ -66,9 +67,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="./javascript/jquery.unveil.js"></script>
         <script>
-            $(function() {
-                $("img").unveil(300);
-            });
+            $("img").load(function () {
+                $(this).unveil(300);
+            })
         </script>
     </body>
 </html>
