@@ -68,10 +68,8 @@
         <script src="./javascript/jquery.unveil.js"></script>
         <script>
             $(function() {
-                $("img").unveil(300, function () {
-                    $(this).fadeTo(0, 0).load(function () {
-                        $(this).fadeTo(1000, 1);
-                    });
+                $("img").unveil(500, function () {
+                    $(this).hide().fadeIn(1000);
                 });
             });
         </script>
