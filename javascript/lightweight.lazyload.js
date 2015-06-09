@@ -30,8 +30,7 @@
 			images.push({
 				"self": this,
 				"et": et,
-				"eb": eb,
-				"path": this.getAttribute("data-src")
+				"eb": eb
 			})
 		});
 
@@ -68,7 +67,7 @@
 				//in viewport
 				else {
 					//load image
-					item.self.setAttribute("src",  item.path);
+					item.self.setAttribute("src", item.self.getAttribute("data-src"));
 
 					//remove from images array
 					return false;
