@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <title>Lazy Loading 테스트</title>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" type="text/css">
+
+        <style>
+
+            /* 기술서 이미지들을 감싸고 있는 요소의 줄간격은 최소로 */
+            p {
+                line-height: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .lazy-hidden {
+                opacity: 0;
+            }
+            .lazy-hidden.lazy-loaded {
+                -webkit-transition: opacity 1s ease 0s;
+                -moz-transition: opacity 1s ease 0s;
+                -ms-transition: opacity 1s ease 0s;
+                -o-transition: opacity 1s ease 0s;
+                transition: opacity 1s ease 0s;
+                opacity: 1;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+    <header>
+    <body>
+        <p>
+            <img data-src="./image/13163198-0.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden" usemap="#001"/>
+            <map name="001">
+                <area alt="" title="" href="https://www.google.com/" shape="rect" coords="230,328,404,359" />
+                <area alt="" title="" href="http://m.naver.com" shape="rect" coords="21,614,196,640" />
+            </map>
+            <br />
+            <img data-src="./image/13163198-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-6.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-7.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-8.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-9.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-10.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-10.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-11.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-12.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-13.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-14.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-15.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-16.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-17.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-18.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-19.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-20.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-21.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-22.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-23.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-24.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-25.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-26.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-27.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-28.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-29.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-30.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-31.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-32.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-33.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-34.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-35.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-36.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-37.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-38.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-39.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-40.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+            <img data-src="./image/13163198-41.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="lazy-hidden"/><br />
+        </p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="./javascript/jquery.unveil.js"></script>
+        <script>
+            $(function() {
+                $("img").unveil(500, function () {
+                    $(this).load(function () {
+                        $(this).addClass("lazy-loaded");
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
