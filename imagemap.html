@@ -20,7 +20,7 @@
 
         div.optimus-image-capture img {
             width: 100%;
-            height: auto;
+            height: auto
         }
 
         div.optimus-image-capture img.lazy-hidden {
@@ -40,7 +40,7 @@
         <br /><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-1jpeg' width=700 height=1000 class='lazy-hidden' />
         <br /><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-2jpeg' width=700 height=511 class='lazy-hidden' />
         <br />
-        <a href='https://www.youtube.com/embed/Sk_JD_q_H0I?feature=player_embedded'><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-3jpeg' width=700 height=360 class='lazy-hidden' /></a>
+        <a href='https://www.youtube.com/embed/Sk_JD_q_H0I?feature=player_embedded' target=_blank><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-3jpeg' width=700 height=360 class='lazy-hidden' /></a>
         <br /><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-4jpeg' width=700 height=1000 class='lazy-hidden' />
         <br /><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-5jpeg' width=700 height=1000 class='lazy-hidden' />
         <br /><img src='data:image/gif;base64,R0lGODlhAQABAAAAACw=' data-src='./image/16233854-6jpeg' width=700 height=1000 class='lazy-hidden' />
@@ -55,7 +55,12 @@
     </div>
     <script>
         $(function() {
-                    $(".optimus-image-capture img").unveil(500,function(){$(this).load(function(){$(this).addClass("lazy-loaded")})})});
+            $('.optimus-image-capture img').unveil(500, function() {
+                $(this).load(function() {
+                    $(this).addClass('lazy-loaded')
+                })
+            })
+        });
     </script>
     </body>
 </html>
