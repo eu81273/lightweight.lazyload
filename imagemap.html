@@ -19,7 +19,8 @@
         }
 
         div.optimus-image-capture img {
-            width: 100%
+            width: 100%;
+            height: auto;
         }
 
         div.optimus-image-capture img.lazy-hidden {
@@ -54,7 +55,7 @@
     </div>
     <script>
         $(function() {
-                    $(".optimus-image-capture > img").unveil(500,function(){$(this).load(function(){$(this).addClass("lazy-loaded")})})});
+                    $(".optimus-image-capture img").unveil(500,function(){$(this).load(function(){$(this).addClass("lazy-loaded")})})});
     </script>
     </body>
 </html>
